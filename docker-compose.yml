@@ -4,12 +4,12 @@ services:
   php:
     #image: php:7.4-apache
     build:
-      context: .
+      context: ./Docker
       dockerfile: Dockerfile
     ports:
       - 80:80
     volumes:
-      - ./src:/var/www/
+      - .:/var/www/html
 
   db:
     image: mysql
