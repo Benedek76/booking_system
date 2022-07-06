@@ -22,9 +22,9 @@ return function (Container $container) {
                 'settings' => ['cache' => false],
             ],
             'connection' => [
-                'host' => 'slim_db_1',
+                'host'   => 'bs_db_1',
                 'dbname' => 'db',
-                'dbuser' => 'user',
+                'dbuser' => 'root',
                 'dbpass' => 'secret',
             ]
         ];

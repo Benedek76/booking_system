@@ -26,11 +26,15 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: 'secret'
+      # MYSQL_USERNAME: root
+      # MYSQL_ROOT_PASSWORD: secret
     ports:
       - '3306:3306'
     volumes:
       - ./storage/db:/var/lib/mysql
-
+      #- ./storage/db/mysql
+      #- .:/var/www/html/./storage/db/mysql
+      #- ./storage/db:/mysql
 
 
 
