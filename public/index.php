@@ -18,6 +18,8 @@ $connection($container);
 
 //phpinfo();
 
+/*
+//query sectiom
 $table = "{$container->get('settings')['connection']['dbname']}.users";
 $columns = "ID INTEGER (11) NOT NULL AUTO_INCREMENT PRIMARY KEY, Name VARCHAR (55) NOT NULL, Email VARCHAR (55) NOT NULL";
 //echo 'teszt5 <br />';
@@ -31,6 +33,7 @@ if ($container->get('connection')->exec($sql) === true) {
 } else {
     echo "ERROR: {$sql} - {$container->get('connection')->error}";
 }
+*/
 
 $logger = require __DIR__ . '/../app/logger.php';
 $logger($container);
@@ -44,8 +47,10 @@ $app = AppFactory::create();
 $views = require __DIR__ . '/../app/views.php';
 $views($app);
 
+/*
 $middleware = require __DIR__ . '/../app/middleware.php';
 $middleware($app);
+*/
 
 // Add Route Definitions
 $routes = require __DIR__ . '/../app/routes.php';
