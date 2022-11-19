@@ -1,4 +1,4 @@
-Php project - used Slim framework in docker environment.
+Build Slim framework in docker environment for PHP project.
 
 Requirements:
 
