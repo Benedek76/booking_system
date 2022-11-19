@@ -1,3 +1,5 @@
+Php project - used Slim framework in docker environment.
+
 Requirements:
 
 Docker images:
